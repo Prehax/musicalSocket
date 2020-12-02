@@ -22,3 +22,14 @@ const std::string stateName[]={
     "Kid is sitting",
     "Kid is quiting",
 };
+
+const char* commands[] = {
+    "HELLO ",
+    "GETUP ",
+    "SIT",
+    "WANT ",
+    "ACK",
+    "NACK ",
+    "QUIT",
+    "PRIZE"
+};

@@ -6,7 +6,7 @@
 
 MomLogic::MomLogic(int n): SockBase(PORT), nKids(n) {
     kids = new Player[n];
-
+    chairs = new char[n-1];
     nCli = 0;
     result = new pollfd[nKids+1];
     welcomeFd = &result[0];
@@ -43,7 +43,7 @@ void MomLogic::run() {
 // ----- doPoll
 void MomLogic::doPoll() {
     *welcomeFd = {fd, POLLIN, 0};
-
+    bool allKidsReady = false;
     for (;;) {
         status = ::poll(result, 1+nCli, -1);
         if (status < 0) {
@@ -64,11 +64,9 @@ void MomLogic::doPoll() {
             //cout <<"Ready to scan workers.\n";
             if (workerFd[k].revents != 0) {
                 //cout <<k <<"  " <<workerFd[k].revents <<endl;
-                status = doService( &workerFd[k] );
+                status = doService( &workerFd[k], k);
                 if (status == -1){
-                    // Dead socket; remove from list.
-                    workerFd[k] = workerFd[--nCli];
-                    // decrement # of workers
+                    fatalp("A child disconnected too early at port %i the game will now end.\n", getPort());
                 }
             }
             // else go on to the next socket.
@@ -77,6 +75,8 @@ void MomLogic::doPoll() {
         // If Client number < nKids, keep events still POLLIN
         // else if nCli = nKids, change events to 0
         welcomeFd->events = (nCli < nKids) ? POLLIN : 0;
+        allKidsReady = areAllKidsReady();
+        if (allKidsReady) break;
     }
 }
 
@@ -110,12 +110,14 @@ int MomLogic::accept(){
     cout << "::accept successful. New fd is " <<newFd <<"\n";
     pollfd newCaller = {newFd, POLLIN, 0};
     // Put new socket into our polling list.
+    Player kid = {"", true, fdopen(newFd, "r"), fdopen(newFd, "w")};
+    kids[nCli] = kid;
     workerFd[nCli++] = newCaller;
     return newFd;
 }
 
 // -------doService
-int MomLogic::doService(pollfd* pfd) {
+int MomLogic::doService(pollfd* pfd, int k) {
     cout << "Now start servicing " << pfd->fd << endl;
     char buf[BUFSIZ];
     memset(buf, 0, BUFSIZ);
@@ -128,8 +130,12 @@ int MomLogic::doService(pollfd* pfd) {
             if (byte > 0) {
                 buf[byte] = '\0';
                 cout << "Hello " << buf << endl;
+                kids[k].name = buf;
             }
         }
+        else if (pfd->revents & POLLHUP) {
+            return -1;
+        }   
     }
     sleep(1);
     return 0;
@@ -138,6 +144,29 @@ int MomLogic::doService(pollfd* pfd) {
 // -------initRound
 void MomLogic::initRound() {
     nChairs = nAlive - 1;
+    for (int k = 0; k < nChairs; ++k){
+        chairs[k] = (char)"1";
+    }
+    for (int k = 0; k < nAlive; ++k){
+        fprintf(kids[k].kidOut, "%s %i\n", commands[cmdMsg::GETUP], nChairs);
+    }
+    stopTheMusic();
+}
 
-    
+void MomLogic::stopTheMusic() {
+
+}
+
+void MomLogic::checkSockets() {
+
+}
+
+bool MomLogic::areAllKidsReady() {
+    bool allKidsReady = true;
+    for (int k = 0; k < nKids; ++k){
+        if (kids[k].name == ""){
+            allKidsReady = false;
+        }
+    }
+    return allKidsReady;
 }

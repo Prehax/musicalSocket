@@ -21,14 +21,14 @@ private:
     struct Player* kids;    // The player array
     int nAlive;     // number of kids still in game
     int nChairs;
-
+    char* chairs;
     int status;     // store return values from sys call
     int nCli;       // number of sockets connected
     pollfd* result;
     pollfd* welcomeFd;
     pollfd* workerFd;
 
-    int doService(pollfd* pfd);
+    int doService(pollfd* pfd, int k);
     int doWelcome();
     // int doReject(); // When nCli reaches nKids
     void doPoll();
@@ -36,7 +36,8 @@ private:
 
     void initRound();
     void stopTheMusic();
-
+    void checkSockets();
+    bool areAllKidsReady();
 public:
     MomLogic() = default;
     MomLogic(int n);

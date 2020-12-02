@@ -38,12 +38,12 @@ void KidLogic::doCommand(){
     if (status!=1) fatalp("Error reading command");
     cout << "State = "<< stateName[pcol]<< ", Command is: " <<command << endl ;
     try{
-        if (strcmp( "GETUP", (const char*)command) == 0) doGetup();
-        else if (strcmp( "SIT", (const char*)command) == 0) doSit();
-        else if (strcmp( "NACK", (const char*)command) == 0) doNack();
-        else if (strcmp( "ACK", (const char*)command) == 0) doAck();
-        else if (strcmp( "QUIT", (const char*)command) == 0) doQuit();
-        else if (strcmp( "PRIZE", (const char*)command) == 0) doPrize();
+        if (strcmp( "GETUP", command) == 0) doGetup();
+        else if (strcmp( "SIT", command) == 0) doSit();
+        else if (strcmp( "NACK", command) == 0) doNack();
+        else if (strcmp( "ACK", command) == 0) doAck();
+        else if (strcmp( "QUIT", command) == 0) doQuit();
+        else if (strcmp( "PRIZE", command) == 0) doPrize();
         else throw( "Protocol is mixed up." );
     }
     catch (string& s) {
