@@ -38,6 +38,16 @@ MomLogic::MomLogic(int n): SockBase(PORT), nKids(n) {
 void MomLogic::run() {
     printf("%d kids are coming~~\n", nKids);
     doPoll();
+    while (nChairs > 1) {
+        initRound();
+    }
+    for (int k = 0; k < nKids; ++k) {
+        if(kids[k].alive) {
+            fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::PRIZE]);
+            fflush(kids[k].kidOut);
+            close(workerFd[k].fd);
+        }
+    }
 }
 
 // ----- doPoll
@@ -149,6 +159,7 @@ void MomLogic::initRound() {
     }
     for (int k = 0; k < nAlive; ++k){
         fprintf(kids[k].kidOut, "%s %i\n", commands[cmdMsg::GETUP], nChairs);
+        fflush(kids[k].kidOut);
     }
     stopTheMusic();
 }
@@ -169,4 +180,10 @@ bool MomLogic::areAllKidsReady() {
         }
     }
     return allKidsReady;
+}
+
+MomLogic::~MomLogic(){
+    delete [] chairs;
+    delete [] kids;
+    delete [] result;
 }

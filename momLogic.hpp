@@ -41,7 +41,7 @@ private:
 public:
     MomLogic() = default;
     MomLogic(int n);
-    ~MomLogic() = default;
+    ~MomLogic();
     void run();
 };
 
