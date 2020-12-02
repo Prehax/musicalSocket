@@ -38,7 +38,7 @@ MomLogic::MomLogic(int n): SockBase(PORT), nKids(n) {
 void MomLogic::run() {
     printf("%d kids are coming~~\n", nKids);
     doPoll();
-    while (nChairs > 1) {
+    while (nAlive > 1) {
         initRound();
     }
     for (int k = 0; k < nKids; ++k) {
@@ -165,7 +165,12 @@ void MomLogic::initRound() {
 }
 
 void MomLogic::stopTheMusic() {
-
+    sleep(2);
+    for (int k = 0; k < nAlive; ++k){
+        fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::SIT], nChairs);
+        fflush(kids[k].kidOut);
+    }
+    checkSockets();
 }
 
 void MomLogic::checkSockets() {
