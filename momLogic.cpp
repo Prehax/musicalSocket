@@ -5,12 +5,12 @@
 #include "momLogic.hpp"
 
 const char* commands[] = {
-    "HELLO ",
-    "GETUP ",
+    "HELLO",
+    "GETUP",
     "SIT",
-    "WANT ",
+    "WANT",
     "ACK",
-    "NACK ",
+    "NACK",
     "QUIT",
     "PRIZE"
 };

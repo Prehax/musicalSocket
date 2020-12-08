@@ -15,6 +15,17 @@ const std::string stateName[]={
     "Kid is quiting",
 };
 
+const char* commands[] = {
+    "HELLO",
+    "GETUP",
+    "SIT",
+    "WANT",
+    "ACK",
+    "NACK",
+    "QUIT",
+    "PRIZE"
+};
+
 KidLogic::KidLogic(const char* h, int port, string name) : 
 SockBase(port), kidName(name) {
     strcpy(host, h);
