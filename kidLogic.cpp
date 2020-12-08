@@ -7,7 +7,7 @@
 */
 #include "kidLogic.hpp"
 
-const std::string stateName[]={
+const string stateName[]={
     "Kid is newbie",
     "Kid is marching",
     "Kid is seeking",
@@ -53,16 +53,27 @@ void KidLogic::connect(const char* host, int port) {
 
 // ------
 void KidLogic::doCommand(){
-    int status = fscanf( momIn, "%6s", command );
+    char* messageCStr = nullptr;
+    int status = fscanf( momIn, "%s", messageCStr);
     if (status!=1) fatalp("Error reading command");
+    string message = messageCStr;
+    string::size_type spacePos = message.find(" ");
+    command = message.substr(0, spacePos);
     cout << "State = "<< stateName[pcol]<< ", Command is: " <<command << endl ;
     try{
-        if (strcmp( "GETUP", command) == 0) doGetup();
-        else if (strcmp( "SIT", command) == 0) doSit();
-        else if (strcmp( "NACK", command) == 0) doNack();
-        else if (strcmp( "ACK", command) == 0) doAck();
-        else if (strcmp( "QUIT", command) == 0) doQuit();
-        else if (strcmp( "PRIZE", command) == 0) doPrize();
+        if (command == commands[cmdMsg::GETUP]){
+            string numChairs = message.substr(spacePos + 1, string::npos);
+            nChairs = stoi(numChairs);
+            doGetup();
+        } 
+        else if (command == commands[cmdMsg::SIT]) doSit();
+        else if (command == commands[cmdMsg::NACK]){
+            string availableChairs = message.substr(spacePos + 1, string::npos);
+            doNack(availableChairs);
+        } 
+        else if (command == commands[cmdMsg::ACK]) doAck();
+        else if (command == commands[cmdMsg::QUIT]) doQuit();
+        else if (command == commands[cmdMsg::PRIZE]) doPrize();
         else throw( "Protocol is mixed up." );
     }
     catch (string& s) {
@@ -82,36 +93,44 @@ void KidLogic::run() {
     fflush(momOut);
     // send(fd, momOut, sizeof(momOut), 0);
 
-    cout << "[Sent<<] " << kidName << endl;
-    // doCommand();
+    while (pcol != StateT::QUITING){
+        doCommand();
+    }
 }
 
 // ----- doGetup
 void KidLogic::doGetup(){
-    cout << "Kid do getup" << endl;
+    pcol = StateT::MARCHING;
+    cout << "Time to get another round started" << endl;
 }
 
 // ----- doSit
 void KidLogic::doSit(){
-    cout << "Kid do sit" << endl;
+    pcol = StateT::SEEKING;
+    cout << "Let's get a seat!" << endl;
 }
 
 // ----- doAck
 void KidLogic::doAck(){
-    cout << "Kid do ack" << endl;
+    pcol = StateT::SITTING;
+    cout << "Woo I got the seat." << endl;
 }
 
 // ----- doQuit
 void KidLogic::doQuit(){
-    cout << "Kid do quit" << endl;
+    close(fd);
+    pcol = StateT::QUITING;
+    cout << "I lost. I am now quitting :(" << endl;
 }
 
 // ----- doPrize
 void KidLogic::doPrize(){
-    cout << "Kid do prize" << endl;
+    close(fd);
+    pcol = StateT::QUITING;
+    cout << "I won :)" << endl;
 }
 
 // ----- doNack
-void KidLogic::doNack(){
+void KidLogic::doNack(string availableChairs){
     cout << "Kid do nack" << endl;
 }

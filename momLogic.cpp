@@ -216,11 +216,11 @@ void MomLogic::checkSockets() {
 //-------------Logic for processing the chair request
 void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
     char* messageCStr = nullptr;
-    std::string message;
+    string message;
     fscanf(kids[kidNum].kidIn, "%7s", messageCStr);
     message = messageCStr;
-    std::string::size_type spacePos = message.find(" ");
-    std::string chairNum = message.substr(spacePos + 1, std::string::npos);
+    string::size_type spacePos = message.find(" ");
+    string chairNum = message.substr(spacePos + 1, string::npos);
     int chairIndex = std::stoi(chairNum) - 1;
     if(chairs[chairIndex] == '1') {
         nAvailable--;

@@ -11,7 +11,7 @@ private:
     int nChairs;
     string kidName;
     StateT pcol = NEWBIE;
-    char* command;
+    std::string command;
 
     // For socket
     // int momFd; is fd, inherited from Base
@@ -23,7 +23,7 @@ private:
     void doAck();
     void doQuit();
     void doPrize();
-    void doNack();
+    void doNack(string availableChairs);
 
 public:
     KidLogic(const char* host, int port, string name);
