@@ -7,6 +7,14 @@
 */
 #include "kidLogic.hpp"
 
+const std::string stateName[]={
+    "Kid is newbie",
+    "Kid is marching",
+    "Kid is seeking",
+    "Kid is sitting",
+    "Kid is quiting",
+};
+
 KidLogic::KidLogic(const char* h, int port, string name) : 
 SockBase(port), kidName(name) {
     strcpy(host, h);

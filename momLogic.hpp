@@ -37,6 +37,7 @@ private:
     void initRound();
     void stopTheMusic();
     void checkSockets();
+    void handleChairRequest(int kidNum, int& nAvailable);
     bool areAllKidsReady();
 public:
     MomLogic() = default;

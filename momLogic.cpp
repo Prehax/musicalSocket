@@ -4,6 +4,17 @@
 */
 #include "momLogic.hpp"
 
+const char* commands[] = {
+    "HELLO ",
+    "GETUP ",
+    "SIT",
+    "WANT ",
+    "ACK",
+    "NACK ",
+    "QUIT",
+    "PRIZE"
+};
+
 MomLogic::MomLogic(int n): SockBase(PORT), nKids(n) {
     kids = new Player[n];
     chairs = new char[n-1];
@@ -155,7 +166,7 @@ int MomLogic::doService(pollfd* pfd, int k) {
 void MomLogic::initRound() {
     nChairs = nAlive - 1;
     for (int k = 0; k < nChairs; ++k){
-        chairs[k] = (char)"1";
+        chairs[k] = '1';
     }
     for (int k = 0; k < nAlive; ++k){
         fprintf(kids[k].kidOut, "%s %i\n", commands[cmdMsg::GETUP], nChairs);
@@ -164,19 +175,73 @@ void MomLogic::initRound() {
     stopTheMusic();
 }
 
+//-----------Sends the SIT message to the kids to get the seat requests going
 void MomLogic::stopTheMusic() {
     sleep(2);
     for (int k = 0; k < nAlive; ++k){
-        fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::SIT], nChairs);
+        fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::SIT]);
         fflush(kids[k].kidOut);
     }
     checkSockets();
 }
 
+//----------Polls the sockets, skipping dead ones, to check for requests and handles the chair request
 void MomLogic::checkSockets() {
-
+    int nAvailable = nChairs;
+    bool roundIsOver = false;
+    while (!roundIsOver){
+        for (int k=0; k<nCli; k++) {
+            if (!kids[k].alive) continue;
+            if (workerFd[k].revents != 0) {
+                if (workerFd[k].revents & POLLIN) {
+                    if (nAvailable == 0){
+                        roundIsOver = true;
+                        kids[k].alive = false;
+                        fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::QUIT]);
+                        fflush(kids[k].kidOut);
+                        close(workerFd[k].fd);
+                        --nAlive;
+                    } else {
+                        handleChairRequest(k, nAvailable);
+                    }
+                }
+                else if (workerFd[k].revents & POLLHUP) {
+                    fatalp("A child disconnected too early at port %i the game will now end.\n", getPort());
+                }              
+            }
+        }
+    }
 }
 
+//-------------Logic for processing the chair request
+void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
+    char* messageCStr = nullptr;
+    std::string message;
+    fscanf(kids[kidNum].kidIn, "%7s", messageCStr);
+    message = messageCStr;
+    std::string::size_type spacePos = message.find(" ");
+    std::string chairNum = message.substr(spacePos + 1, std::string::npos);
+    int chairIndex = std::stoi(chairNum) - 1;
+    if(chairs[chairIndex] == '1') {
+        nAvailable--;
+        chairs[chairIndex] = '0';
+        fprintf(kids[kidNum].kidOut, "%s\n", commands[cmdMsg::ACK]);
+        fflush(kids[kidNum].kidOut);
+    }
+    else {
+        char availableChairs[nAvailable];
+        int aChairsIdx = 0;
+        for (int j = 0; j < nChairs; ++j){
+            if (chairs[j] == '1'){
+                availableChairs[aChairsIdx++] = (j + 1) + '0'; //this approach might not work as intended with multi-digit numbers
+            }
+        }
+        fprintf(kids[kidNum].kidOut, "%s %s\n", commands[cmdMsg::NACK], availableChairs);
+        fflush(kids[kidNum].kidOut);
+    }
+}
+
+//-------------Logic to determine that all kids are ready to play to break out of the initial polling loop
 bool MomLogic::areAllKidsReady() {
     bool allKidsReady = true;
     for (int k = 0; k < nKids; ++k){
