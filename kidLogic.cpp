@@ -55,7 +55,7 @@ void KidLogic::connect(const char* host, int port) {
 void KidLogic::doCommand(){
     char* messageCStr = nullptr;
     int status = fscanf( momIn, "%s", messageCStr);
-    if (status!=1) fatalp("Error reading command");
+    if (status!=1) return;
     string message = messageCStr;
     string::size_type spacePos = message.find(" ");
     command = message.substr(0, spacePos);
