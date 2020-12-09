@@ -23,7 +23,7 @@ private:
     void doAck();
     void doQuit();
     void doPrize();
-    void doNack(string availableChairs);
+    void doNack(char* availableChairs);
 
 public:
     KidLogic(const char* host, int port, string name);

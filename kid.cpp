@@ -1,6 +1,7 @@
 #include "kidLogic.hpp"
 
 int main(int argc, char* argv[]) {
+    srand(time(NULL));
     banner();
     // check correct number of arguments
     if (argc != 3) {

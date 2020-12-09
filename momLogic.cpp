@@ -133,6 +133,7 @@ int MomLogic::accept(){
     pollfd newCaller = {newFd, POLLIN, 0};
     // Put new socket into our polling list.
     Player kid = {"", true, fdopen(newFd, "r"), fdopen(newFd, "w")};
+    cout << nCli << endl;
     kids[nCli] = kid;
     workerFd[nCli++] = newCaller;
     return newFd;
@@ -141,19 +142,15 @@ int MomLogic::accept(){
 // -------doService
 int MomLogic::doService(pollfd* pfd, int k) {
     cout << "Now start servicing " << pfd->fd << endl;
-    char buf[BUFSIZ];
-    memset(buf, 0, BUFSIZ);
+    char buf[256];
 
     if (pfd->revents != 0) {
         // This means there is an event
         if (pfd->revents & POLLIN) {
             // This means the event is reading
-            int byte = read(pfd->fd, buf, BUFSIZ);
-            if (byte > 0) {
-                buf[byte] = '\0';
-                cout << "Hello " << buf << endl;
-                kids[k].name = buf;
-            }
+            fscanf(kids[k].kidIn, "%s", buf);
+            cout << "Hello " << buf << endl;
+            kids[k].name = buf;
         }
         else if (pfd->revents & POLLHUP) {
             return -1;
@@ -218,13 +215,10 @@ void MomLogic::checkSockets() {
 
 //-------------Logic for processing the chair request
 void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
-    char* messageCStr = nullptr;
-    string message;
-    fscanf(kids[kidNum].kidIn, "%7s", messageCStr);
-    message = messageCStr;
-    string::size_type spacePos = message.find(" ");
-    string chairNum = message.substr(spacePos + 1, string::npos);
-    int chairIndex = std::stoi(chairNum) - 1;
+    int chairNum = 0;
+    fscanf(kids[kidNum].kidIn, "%i", &chairNum);
+    int chairIndex = chairNum - 1;
+    cout << chairIndex << endl;
     if(chairs[chairIndex] == '1') {
         nAvailable--;
         chairs[chairIndex] = '0';

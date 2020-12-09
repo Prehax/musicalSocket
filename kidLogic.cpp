@@ -53,28 +53,29 @@ void KidLogic::connect(const char* host, int port) {
 
 // ------
 void KidLogic::doCommand(){
-    char* messageCStr = nullptr;
-    int status = fscanf( momIn, "%s", messageCStr);
-    if (status!=1) return;
-    string message = messageCStr;
-    string::size_type spacePos = message.find(" ");
-    command = message.substr(0, spacePos);
+    string errorMessage = "Protocol is mixed up.";
+    char messageCStr[256];
+    fscanf(momIn, "%s", messageCStr);
+    cout << messageCStr << endl;
+    command = messageCStr;
     cout << "State = "<< stateName[pcol]<< ", Command is: " <<command << endl ;
     try{
         if (command == commands[cmdMsg::GETUP]){
-            string numChairs = message.substr(spacePos + 1, string::npos);
-            nChairs = stoi(numChairs);
+            fscanf(momIn, "%i", &nChairs);
             doGetup();
         } 
-        else if (command == commands[cmdMsg::SIT]) doSit();
+        else if (command == commands[cmdMsg::SIT]){
+            if (pcol != StateT::SEEKING) doSit();
+        } 
         else if (command == commands[cmdMsg::NACK]){
-            string availableChairs = message.substr(spacePos + 1, string::npos);
+            char availableChairs[256];
+            fscanf(momIn, "%s", availableChairs);
             doNack(availableChairs);
         } 
         else if (command == commands[cmdMsg::ACK]) doAck();
         else if (command == commands[cmdMsg::QUIT]) doQuit();
         else if (command == commands[cmdMsg::PRIZE]) doPrize();
-        else throw( "Protocol is mixed up." );
+        else throw(errorMessage);
     }
     catch (string& s) {
         cout << s <<" ["<< command <<"]\n";
@@ -113,7 +114,7 @@ void KidLogic::doSit(){
     // Change this child's state to SEEKING
     pcol = SEEKING;
     // Get a random chair to try
-    int wantSeat = rand()%nChairs;
+    int wantSeat = rand()%nChairs + 1;
     // Send request
     cout << "Trying seat: " << wantSeat << endl;
     fprintf(momOut, "WANT %d\n", wantSeat);
@@ -141,6 +142,6 @@ void KidLogic::doPrize(){
 }
 
 // ----- doNack
-void KidLogic::doNack(string availableChairs){
+void KidLogic::doNack(char* availableChairs){
     cout << "Kid do nack" << endl;
 }
