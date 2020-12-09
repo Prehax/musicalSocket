@@ -22,6 +22,7 @@ MomLogic::MomLogic(int n): SockBase(PORT), nKids(n) {
     result = new pollfd[nKids+1];
     welcomeFd = &result[0];
     workerFd = &result[1];
+    nAlive = n;
 
     // Setup the server, bind info to this fd
     if (::bind(fd, (struct sockaddr*)&info, sizeof(info)) != 0 ) {
@@ -97,7 +98,7 @@ void MomLogic::doPoll() {
         // else if nCli = nKids, change events to 0
         welcomeFd->events = (nCli < nKids) ? POLLIN : 0;
         allKidsReady = areAllKidsReady();
-        if (allKidsReady) break;
+        if (allKidsReady && nCli == nKids) break;
     }
 }
 
