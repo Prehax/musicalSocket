@@ -215,8 +215,9 @@ void MomLogic::checkSockets() {
 
 //-------------Logic for processing the chair request
 void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
+    char buffer[256];
     int chairNum = 0;
-    fscanf(kids[kidNum].kidIn, "%i", &chairNum);
+    fscanf(kids[kidNum].kidIn, "%s %i", buffer, &chairNum);
     int chairIndex = chairNum - 1;
     cout << chairIndex << endl;
     if(chairs[chairIndex] == '1') {

@@ -117,7 +117,7 @@ void KidLogic::doSit(){
     int wantSeat = rand()%nChairs + 1;
     // Send request
     cout << "Trying seat: " << wantSeat << endl;
-    fprintf(momOut, "WANT %d\n", wantSeat);
+    fprintf(momOut, "WANT %i\n", wantSeat);
     fflush(momOut);
 }
 
