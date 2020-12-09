@@ -33,12 +33,13 @@ MomLogic::MomLogic(int n): SockBase(PORT), nKids(n) {
     }
 
     // Reuse the port number
-    // int trueVal = 1;
-    // status = setsockopt(welcomeFd->fd, SOL_SOCKET, SO_REUSEADDR, &trueVal, sizeof(int));
+    int trueVal = 1;
+    setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &trueVal, sizeof(trueVal));
+    setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, &trueVal, sizeof(trueVal));
     // if (status < 0) { fatal("Can't set reuse socket option"); }
 
     // Set it to listen mode
-    if (::listen(fd, 10) != 0) {
+    if (::listen(fd, 25) != 0) {
         fatal("Can not listen!\n");
         close(fd);
         bye();

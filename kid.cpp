@@ -22,7 +22,11 @@ int main(int argc, char* argv[]) {
     nBytes = read( kid.getFd(), buf, BUFSIZ );
     // connection message
     if (nBytes >= 0) { cout << "[Get>>>] "<< buf; } 
-    else {fatalp("kid: Error while reading from socket.\n");}
+    else {
+        cout << argv[2] << ": I'm late, I'll leave" << endl;
+        kid.~KidLogic();
+        bye(); return 0;
+    }
     kid.run();
     // all the socket connections are closed automatically 
     bye();

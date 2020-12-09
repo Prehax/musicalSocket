@@ -90,6 +90,7 @@ void KidLogic::run() {
     momOut = fdopen(fd, "w");
 
     // Send name to server
+    cout << "[Send<<] " << kidName << endl;
     fprintf(momOut, "%s\n", kidName.c_str());
     fflush(momOut);
     // send(fd, momOut, sizeof(momOut), 0);
@@ -112,7 +113,7 @@ void KidLogic::doSit(){
     // Sleep for a random time
     usleep(rand()%30000);
     // Change this child's state to SEEKING
-    pcol = SEEKING;
+    pcol = StateT::SEEKING;
     // Get a random chair to try
     int wantSeat = rand()%nChairs + 1;
     // Send request
