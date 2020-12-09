@@ -229,14 +229,7 @@ void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
         fflush(kids[kidNum].kidOut);
     }
     else {
-        char availableChairs[nAvailable];
-        int aChairsIdx = 0;
-        for (int j = 0; j < nChairs; ++j){
-            if (chairs[j] == '1'){
-                availableChairs[aChairsIdx++] = (j + 1) + '0'; //this approach might not work as intended with multi-digit numbers
-            }
-        }
-        fprintf(kids[kidNum].kidOut, "%s %s\n", commands[cmdMsg::NACK], availableChairs);
+        fprintf(kids[kidNum].kidOut, "%s %s\n", commands[cmdMsg::NACK], chairs);
         fflush(kids[kidNum].kidOut);
     }
 }
