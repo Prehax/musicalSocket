@@ -169,7 +169,8 @@ void MomLogic::initRound() {
     for (int k = 0; k < nChairs; ++k){
         chairs[k] = '1';
     }
-    for (int k = 0; k < nAlive; ++k){
+    for (int k = 0; k < nKids; ++k){
+        if (!kids[k].alive) continue;
         fprintf(kids[k].kidOut, "%s %i\n", commands[cmdMsg::GETUP], nChairs);
         fflush(kids[k].kidOut);
     }
@@ -179,7 +180,8 @@ void MomLogic::initRound() {
 //-----------Sends the SIT message to the kids to get the seat requests going
 void MomLogic::stopTheMusic() {
     sleep(2);
-    for (int k = 0; k < nAlive; ++k){
+    for (int k = 0; k < nKids; ++k){
+        if (!kids[k].alive) continue;
         fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::SIT]);
         fflush(kids[k].kidOut);
     }
