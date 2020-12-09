@@ -7,7 +7,7 @@
 #include "momLogic.hpp"
 
 int main(int argc, char* argv[]) {
-    //banner();
+    banner();
     // Check the command parameters
     if (argc<2) {
         printf("Error: Not enough arguments!\n\nUsage: mom kidNumber\nExample: mom 4\n");
@@ -23,6 +23,6 @@ int main(int argc, char* argv[]) {
     MomLogic momLogic(nKids);
     momLogic.run();
 
-    //bye();
+    bye();
     return 0;
 }

@@ -1,6 +1,7 @@
 #include "kidLogic.hpp"
 
 int main(int argc, char* argv[]) {
+    banner();
     // check correct number of arguments
     if (argc != 3) {
         fatalp( "Usage: kid hostname Name\nExample: kid localhost Amy\n");
@@ -23,7 +24,8 @@ int main(int argc, char* argv[]) {
     else {fatalp("kid: Error while reading from socket.\n");}
     kid.run();
     // all the socket connections are closed automatically 
-    exit(0);
+    bye();
+    return 0;
 }
 
 // Amy Bob Carol Dimen Eyad Frank Green Helen Iestyn Jack Kazuo 
