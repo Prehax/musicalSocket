@@ -147,7 +147,7 @@ int MomLogic::doService(pollfd* pfd, int k) {
         // This means there is an event
         if (pfd->revents & POLLIN) {
             // This means the event is reading
-            int byte = read(pfd->revents, buf, BUFSIZ);
+            int byte = read(pfd->fd, buf, BUFSIZ);
             if (byte > 0) {
                 buf[byte] = '\0';
                 cout << "Hello " << buf << endl;
