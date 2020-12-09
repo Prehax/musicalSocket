@@ -108,6 +108,16 @@ void KidLogic::doGetup(){
 void KidLogic::doSit(){
     pcol = StateT::SEEKING;
     cout << "Let's get a seat!" << endl;
+    // Sleep for a random time
+    usleep(rand()%30000);
+    // Change this child's state to SEEKING
+    pcol = SEEKING;
+    // Get a random chair to try
+    int wantSeat = rand()%nChairs;
+    // Send request
+    cout << "Trying seat: " << wantSeat << endl;
+    fprintf(momOut, "WANT %d\n", wantSeat);
+    fflush(momOut);
 }
 
 // ----- doAck
