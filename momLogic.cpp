@@ -133,7 +133,6 @@ int MomLogic::accept(){
     pollfd newCaller = {newFd, POLLIN, 0};
     // Put new socket into our polling list.
     Player kid = {"", true, fdopen(newFd, "r"), fdopen(newFd, "w")};
-    cout << nCli << endl;
     kids[nCli] = kid;
     workerFd[nCli++] = newCaller;
     return newFd;

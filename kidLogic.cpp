@@ -143,5 +143,17 @@ void KidLogic::doPrize(){
 
 // ----- doNack
 void KidLogic::doNack(char* availableChairs){
-    cout << "Kid do nack" << endl;
+    int chairCount = 0;
+    for (int j = 0; j < strlen(availableChairs); ++j){
+        if (availableChairs[j] == '1') chairCount++;
+    }
+    int chairNums[chairCount];
+    int k = 0;
+    for (int j = 0; j < strlen(availableChairs); ++j){
+        if (availableChairs[j] == '1') chairNums[k] = j;
+    }
+    int wantSeat = rand()%chairCount;
+    cout << "Trying seat: " << wantSeat << endl;
+    fprintf(momOut, "WANT %i\n", wantSeat);
+    fflush(momOut);
 }
