@@ -150,9 +150,9 @@ void KidLogic::doNack(char* availableChairs){
     int chairNums[chairCount];
     int k = 0;
     for (int j = 0; j < strlen(availableChairs); ++j){
-        if (availableChairs[j] == '1') chairNums[k] = j;
+        if (availableChairs[j] == '1') chairNums[k] = j + 1;
     }
-    int wantSeat = rand()%chairCount;
+    int wantSeat = chairNums[rand()%chairCount];
     cout << "Trying seat: " << wantSeat << endl;
     fprintf(momOut, "WANT %i\n", wantSeat);
     fflush(momOut);

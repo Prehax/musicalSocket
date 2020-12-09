@@ -189,6 +189,12 @@ void MomLogic::checkSockets() {
     int nAvailable = nChairs;
     bool roundIsOver = false;
     while (!roundIsOver){
+        status = ::poll(result, 1+nCli, -1);
+        if (status < 0) {
+            fatal("Error in poll().\n");
+        } else if (status == 0) {
+            fatal("Poll timed out.\n");
+        }
         for (int k=0; k<nCli; k++) {
             if (!kids[k].alive) continue;
             if (workerFd[k].revents != 0) {
@@ -218,7 +224,6 @@ void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
     int chairNum = 0;
     fscanf(kids[kidNum].kidIn, "%s %i", buffer, &chairNum);
     int chairIndex = chairNum - 1;
-    cout << chairIndex << endl;
     if(chairs[chairIndex] == '1') {
         nAvailable--;
         chairs[chairIndex] = '0';
