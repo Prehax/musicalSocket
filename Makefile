@@ -16,7 +16,7 @@ mom: $(OBJ-SER)
 
 # cleanup --------------------------------------------------------
 clean:
-	rm -f mom kid $(OBJ-SER) $(OBJ-CLI)
+	rm -f mom kid $(OBJ-SER) $(OBJ-CLI) *.log
 
 # dependencies ---------------------------------------------------
 

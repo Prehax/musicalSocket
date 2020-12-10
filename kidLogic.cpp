@@ -115,7 +115,7 @@ void KidLogic::doSit(){
     // Change this child's state to SEEKING
     pcol = StateT::SEEKING;
     // Get a random chair to try
-    int wantSeat = rand()%nChairs + 1;
+    int wantSeat = rand()%nChairs;
     // Send request
     cout << "Trying seat: " << wantSeat << endl;
     fprintf(momOut, "WANT %i\n", wantSeat);
@@ -148,11 +148,20 @@ void KidLogic::doNack(char* availableChairs){
     for (int j = 0; j < strlen(availableChairs); ++j){
         if (availableChairs[j] == '1') chairCount++;
     }
+    // cout << availableChairs << endl;
     int chairNums[chairCount];
     int k = 0;
     for (int j = 0; j < strlen(availableChairs); ++j){
-        if (availableChairs[j] == '1') chairNums[k] = j + 1;
+        if (availableChairs[j] == '1') { 
+            chairNums[k] = j; 
+            k++;
+        }
     }
+
+    // for debug use
+    // for (int i: chairNums) { cout << i << " "; }
+    // cout << endl;
+
     int wantSeat = chairNums[rand()%chairCount];
     cout << "Trying seat: " << wantSeat << endl;
     fprintf(momOut, "WANT %i\n", wantSeat);

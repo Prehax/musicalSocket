@@ -56,6 +56,7 @@ void MomLogic::run() {
     }
     for (int k = 0; k < nKids; ++k) {
         if(kids[k].alive) {
+            cout << kids[k].name << " is the winner, congratulations!" << endl;
             fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::PRIZE]);
             fflush(kids[k].kidOut);
             close(workerFd[k].fd);
@@ -130,7 +131,7 @@ int MomLogic::accept(){
         cout <<"False alarm: connection was rejected.\n";
         return 0;  // False alarm, nobody there, 0 new clients.
     }
-    cout << "::accept successful. New fd is " <<newFd <<"\n";
+    // cout << "::accept successful. New fd is " <<newFd <<"\n";
     pollfd newCaller = {newFd, POLLIN, 0};
     // Put new socket into our polling list.
     Player kid = {"", true, fdopen(newFd, "r"), fdopen(newFd, "w")};
@@ -141,7 +142,7 @@ int MomLogic::accept(){
 
 // -------doService
 int MomLogic::doService(pollfd* pfd, int k) {
-    cout << "Now start servicing " << pfd->fd << endl;
+    // cout << "Now start servicing " << pfd->fd << endl;
     char buf[256];
 
     if (pfd->revents != 0) {
@@ -162,6 +163,7 @@ int MomLogic::doService(pollfd* pfd, int k) {
 
 // -------initRound
 void MomLogic::initRound() {
+    cout << "------------------------------" << endl;
     nChairs = nAlive - 1;
     for (int k = 0; k < nChairs; ++k){
         chairs[k] = '1';
@@ -224,14 +226,16 @@ void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
     char buffer[256];
     int chairNum = 0;
     fscanf(kids[kidNum].kidIn, "%s %i", buffer, &chairNum);
-    int chairIndex = chairNum - 1;
+    int chairIndex = chairNum;
     if(chairs[chairIndex] == '1') {
         nAvailable--;
         chairs[chairIndex] = '0';
+        cout << kids[kidNum].name << " is sitting on chair " << chairIndex << endl;
         fprintf(kids[kidNum].kidOut, "%s\n", commands[cmdMsg::ACK]);
         fflush(kids[kidNum].kidOut);
     }
     else {
+        // cout << kids[kidNum].name << " is trying on chair " << chairIndex << ", but failed"<< endl;
         fprintf(kids[kidNum].kidOut, "%s %s\n", commands[cmdMsg::NACK], chairs);
         fflush(kids[kidNum].kidOut);
     }
