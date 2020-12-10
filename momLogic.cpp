@@ -168,6 +168,7 @@ void MomLogic::initRound() {
     for (int k = 0; k < nChairs; ++k){
         chairs[k] = '1';
     }
+    chairs[nChairs] = '\0'; 
     for (int k = 0; k < nKids; ++k){
         if (!kids[k].alive) continue;
         fprintf(kids[k].kidOut, "%s %i\n", commands[cmdMsg::GETUP], nChairs);
