@@ -1,0 +1,2421 @@
+////////////////////////////////////////////
+///////////////// Server ///////////////////
+////////////////////////////////////////////
+prehax@PreBook musicalSocket % ./mom 25
+
+---------------------------------------------------------------
+	Dylan Chariott & Longlong Xu
+	CSCI 4547/6647
+	Wed Dec  9 2020	23:52:21
+---------------------------------------------------------------
+There are 25 kids joining the game...
+25 kids are coming~~
+[Send<<] HELLO to Bob
+[Send<<] HELLO to Amy
+[Send<<] HELLO to Carol
+[Send<<] HELLO to Dimen
+[Send<<] HELLO to Eyad
+[Send<<] HELLO to Frank
+[Send<<] HELLO to Green
+[Send<<] HELLO to Helen
+[Send<<] HELLO to Iii
+[Send<<] HELLO to Jack
+[Send<<] HELLO to Kate
+[Send<<] HELLO to Len
+[Send<<] HELLO to Maria
+[Send<<] HELLO to Nike
+[Send<<] HELLO to Ooo
+[Send<<] HELLO to Qqq
+[Send<<] HELLO to Peter
+[Send<<] HELLO to Uuu
+[Send<<] HELLO to Vvv
+[Send<<] HELLO to Rrr
+[Send<<] HELLO to Yyy
+[Send<<] HELLO to Zzz
+[Send<<] HELLO to Sam
+[Send<<] HELLO to Xu
+[Send<<] HELLO to Ttt
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Dimen
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Ooo
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Uuu
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Zzz
+[Send<<] GETUP to Sam
+[Send<<] GETUP to Xu
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Dimen
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Ooo
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Uuu
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Zzz
+[Send<<] SIT to Sam
+[Send<<] SIT to Xu
+[Send<<] SIT to Ttt
+[Get>>>] WANT 9 from Eyad
+Eyad is sitting on chair 9
+[Send<<] ACK to Eyad
+[Get>>>] WANT 9 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 9 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 9 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 9 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 9 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 9 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 9 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 9 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 9 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 9 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 9 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 9 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 9 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 9 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 9 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 9 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 9 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 9 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 9 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 9 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 9 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 9 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 9 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 20 from Bob
+Bob is sitting on chair 20
+[Send<<] ACK to Bob
+[Get>>>] WANT 20 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 20 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 9 from Dimen
+[Send<<] NACK to Dimen
+[Get>>>] WANT 20 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 20 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 20 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 20 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 20 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 20 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 20 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 20 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 20 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 20 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 20 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 20 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 16 from Amy
+Amy is sitting on chair 16
+[Send<<] ACK to Amy
+[Get>>>] WANT 16 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 2 from Dimen
+Dimen is sitting on chair 2
+[Send<<] ACK to Dimen
+[Get>>>] WANT 16 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 16 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 16 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 20 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 20 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 20 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 20 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 20 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 20 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 20 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 20 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 23 from Carol
+Carol is sitting on chair 23
+[Send<<] ACK to Carol
+[Get>>>] WANT 6 from Frank
+Frank is sitting on chair 6
+[Send<<] ACK to Frank
+[Get>>>] WANT 6 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 16 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 6 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 16 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 16 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 16 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 16 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 16 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 16 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 16 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 16 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 21 from Uuu
+Uuu is sitting on chair 21
+[Send<<] ACK to Uuu
+[Get>>>] WANT 5 from Green
+Green is sitting on chair 5
+[Send<<] ACK to Green
+[Get>>>] WANT 22 from Helen
+Helen is sitting on chair 22
+[Send<<] ACK to Helen
+[Get>>>] WANT 5 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 22 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 22 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 22 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 21 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 21 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 21 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 21 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 21 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 21 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 21 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 19 from Iii
+Iii is sitting on chair 19
+[Send<<] ACK to Iii
+[Get>>>] WANT 14 from Jack
+Jack is sitting on chair 14
+[Send<<] ACK to Jack
+[Get>>>] WANT 22 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 22 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 14 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 22 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 22 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 22 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 14 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 8 from Vvv
+Vvv is sitting on chair 8
+[Send<<] ACK to Vvv
+[Get>>>] WANT 8 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 8 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 8 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 8 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 8 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 8 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 3 from Kate
+Kate is sitting on chair 3
+[Send<<] ACK to Kate
+[Get>>>] WANT 13 from Len
+Len is sitting on chair 13
+[Send<<] ACK to Len
+[Get>>>] WANT 13 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 3 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 13 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 13 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 13 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 7 from Rrr
+Rrr is sitting on chair 7
+[Send<<] ACK to Rrr
+[Get>>>] WANT 7 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 7 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 7 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 7 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 7 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 18 from Maria
+Maria is sitting on chair 18
+[Send<<] ACK to Maria
+[Get>>>] WANT 10 from Nike
+Nike is sitting on chair 10
+[Send<<] ACK to Nike
+[Get>>>] WANT 18 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 18 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 18 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 12 from Yyy
+Yyy is sitting on chair 12
+[Send<<] ACK to Yyy
+[Get>>>] WANT 12 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 12 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 12 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 12 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 1 from Ooo
+Ooo is sitting on chair 1
+[Send<<] ACK to Ooo
+[Get>>>] WANT 1 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 1 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 15 from Zzz
+Zzz is sitting on chair 15
+[Send<<] ACK to Zzz
+[Get>>>] WANT 15 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 15 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 15 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 15 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 15 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 0 from Sam
+Sam is sitting on chair 0
+[Send<<] ACK to Sam
+[Get>>>] WANT 0 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 0 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 0 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 0 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 17 from Ttt
+Ttt is sitting on chair 17
+[Send<<] ACK to Ttt
+[Get>>>] WANT 11 from Peter
+Peter is sitting on chair 11
+[Send<<] ACK to Peter
+[Get>>>] WANT 11 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 17 from Xu
+[Send<<] NACK to Xu
+[Get>>>] WANT 4 from Qqq
+Qqq is sitting on chair 4
+[Send<<] ACK to Qqq
+[Send<<] QUIT to Xu
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Dimen
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Ooo
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Uuu
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Zzz
+[Send<<] GETUP to Sam
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Dimen
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Ooo
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Uuu
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Zzz
+[Send<<] SIT to Sam
+[Send<<] SIT to Ttt
+[Get>>>] WANT 11 from Iii
+Iii is sitting on chair 11
+[Send<<] ACK to Iii
+[Get>>>] WANT 11 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 11 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 11 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 21 from Kate
+Kate is sitting on chair 21
+[Send<<] ACK to Kate
+[Get>>>] WANT 21 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 21 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 1 from Yyy
+Yyy is sitting on chair 1
+[Send<<] ACK to Yyy
+[Get>>>] WANT 1 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 12 from Maria
+Maria is sitting on chair 12
+[Send<<] ACK to Maria
+[Get>>>] WANT 19 from Carol
+Carol is sitting on chair 19
+[Send<<] ACK to Carol
+[Get>>>] WANT 19 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 20 from Helen
+Helen is sitting on chair 20
+[Send<<] ACK to Helen
+[Get>>>] WANT 19 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 17 from Vvv
+Vvv is sitting on chair 17
+[Send<<] ACK to Vvv
+[Get>>>] WANT 11 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 18 from Sam
+Sam is sitting on chair 18
+[Send<<] ACK to Sam
+[Get>>>] WANT 4 from Eyad
+Eyad is sitting on chair 4
+[Send<<] ACK to Eyad
+[Get>>>] WANT 19 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 10 from Frank
+Frank is sitting on chair 10
+[Send<<] ACK to Frank
+[Get>>>] WANT 12 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 5 from Ttt
+Ttt is sitting on chair 5
+[Send<<] ACK to Ttt
+[Get>>>] WANT 1 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 0 from Green
+Green is sitting on chair 0
+[Send<<] ACK to Green
+[Get>>>] WANT 1 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 1 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 3 from Len
+Len is sitting on chair 3
+[Send<<] ACK to Len
+[Get>>>] WANT 3 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 2 from Jack
+Jack is sitting on chair 2
+[Send<<] ACK to Jack
+[Get>>>] WANT 1 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 15 from Rrr
+Rrr is sitting on chair 15
+[Send<<] ACK to Rrr
+[Get>>>] WANT 3 from Dimen
+[Send<<] NACK to Dimen
+[Get>>>] WANT 5 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 3 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 0 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 6 from Dimen
+Dimen is sitting on chair 6
+[Send<<] ACK to Dimen
+[Get>>>] WANT 7 from Qqq
+Qqq is sitting on chair 7
+[Send<<] ACK to Qqq
+[Get>>>] WANT 7 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 6 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 16 from Amy
+Amy is sitting on chair 16
+[Send<<] ACK to Amy
+[Get>>>] WANT 22 from Bob
+Bob is sitting on chair 22
+[Send<<] ACK to Bob
+[Get>>>] WANT 0 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 9 from Uuu
+Uuu is sitting on chair 9
+[Send<<] ACK to Uuu
+[Get>>>] WANT 9 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 9 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 8 from Peter
+Peter is sitting on chair 8
+[Send<<] ACK to Peter
+[Get>>>] WANT 9 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 13 from Ooo
+Ooo is sitting on chair 13
+[Send<<] ACK to Ooo
+[Get>>>] WANT 13 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 13 from Zzz
+[Send<<] NACK to Zzz
+[Get>>>] WANT 14 from Nike
+Nike is sitting on chair 14
+[Send<<] ACK to Nike
+[Send<<] QUIT to Zzz
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Dimen
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Ooo
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Uuu
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Sam
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Dimen
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Ooo
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Uuu
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Sam
+[Send<<] SIT to Ttt
+[Get>>>] WANT 12 from Bob
+Bob is sitting on chair 12
+[Send<<] ACK to Bob
+[Get>>>] WANT 12 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 12 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 11 from Carol
+Carol is sitting on chair 11
+[Send<<] ACK to Carol
+[Get>>>] WANT 11 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 2 from Uuu
+Uuu is sitting on chair 2
+[Send<<] ACK to Uuu
+[Get>>>] WANT 18 from Iii
+Iii is sitting on chair 18
+[Send<<] ACK to Iii
+[Get>>>] WANT 18 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 18 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 18 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 3 from Green
+Green is sitting on chair 3
+[Send<<] ACK to Green
+[Get>>>] WANT 3 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 3 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 16 from Jack
+Jack is sitting on chair 16
+[Send<<] ACK to Jack
+[Get>>>] WANT 16 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 8 from Rrr
+Rrr is sitting on chair 8
+[Send<<] ACK to Rrr
+[Get>>>] WANT 13 from Kate
+Kate is sitting on chair 13
+[Send<<] ACK to Kate
+[Get>>>] WANT 8 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 15 from Len
+Len is sitting on chair 15
+[Send<<] ACK to Len
+[Get>>>] WANT 0 from Dimen
+Dimen is sitting on chair 0
+[Send<<] ACK to Dimen
+[Get>>>] WANT 5 from Nike
+Nike is sitting on chair 5
+[Send<<] ACK to Nike
+[Get>>>] WANT 9 from Peter
+Peter is sitting on chair 9
+[Send<<] ACK to Peter
+[Get>>>] WANT 5 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 21 from Sam
+Sam is sitting on chair 21
+[Send<<] ACK to Sam
+[Get>>>] WANT 5 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 14 from Eyad
+Eyad is sitting on chair 14
+[Send<<] ACK to Eyad
+[Get>>>] WANT 9 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 20 from Maria
+Maria is sitting on chair 20
+[Send<<] ACK to Maria
+[Get>>>] WANT 20 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 6 from Ttt
+Ttt is sitting on chair 6
+[Send<<] ACK to Ttt
+[Get>>>] WANT 20 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 20 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 20 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 20 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 17 from Amy
+Amy is sitting on chair 17
+[Send<<] ACK to Amy
+[Get>>>] WANT 17 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 17 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 17 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 1 from Frank
+Frank is sitting on chair 1
+[Send<<] ACK to Frank
+[Get>>>] WANT 1 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 1 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 7 from Helen
+Helen is sitting on chair 7
+[Send<<] ACK to Helen
+[Get>>>] WANT 7 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 10 from Vvv
+Vvv is sitting on chair 10
+[Send<<] ACK to Vvv
+[Get>>>] WANT 3 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 18 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 3 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 19 from Yyy
+Yyy is sitting on chair 19
+[Send<<] ACK to Yyy
+[Get>>>] WANT 19 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 19 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 4 from Qqq
+Qqq is sitting on chair 4
+[Send<<] ACK to Qqq
+[Send<<] QUIT to Ooo
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Dimen
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Uuu
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Sam
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Dimen
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Uuu
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Sam
+[Send<<] SIT to Ttt
+[Get>>>] WANT 1 from Bob
+Bob is sitting on chair 1
+[Send<<] ACK to Bob
+[Get>>>] WANT 20 from Carol
+Carol is sitting on chair 20
+[Send<<] ACK to Carol
+[Get>>>] WANT 1 from Eyad
+[Send<<] NACK to Eyad
+[Get>>>] WANT 10 from Qqq
+Qqq is sitting on chair 10
+[Send<<] ACK to Qqq
+[Get>>>] WANT 8 from Eyad
+Eyad is sitting on chair 8
+[Send<<] ACK to Eyad
+[Get>>>] WANT 3 from Ttt
+Ttt is sitting on chair 3
+[Send<<] ACK to Ttt
+[Get>>>] WANT 16 from Green
+Green is sitting on chair 16
+[Send<<] ACK to Green
+[Get>>>] WANT 16 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 16 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 19 from Frank
+Frank is sitting on chair 19
+[Send<<] ACK to Frank
+[Get>>>] WANT 19 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 15 from Jack
+Jack is sitting on chair 15
+[Send<<] ACK to Jack
+[Get>>>] WANT 17 from Kate
+Kate is sitting on chair 17
+[Send<<] ACK to Kate
+[Get>>>] WANT 17 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 17 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 11 from Helen
+Helen is sitting on chair 11
+[Send<<] ACK to Helen
+[Get>>>] WANT 11 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 12 from Rrr
+Rrr is sitting on chair 12
+[Send<<] ACK to Rrr
+[Get>>>] WANT 11 from Dimen
+[Send<<] NACK to Dimen
+[Get>>>] WANT 4 from Dimen
+Dimen is sitting on chair 4
+[Send<<] ACK to Dimen
+[Get>>>] WANT 4 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 4 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 3 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 3 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 4 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 2 from Maria
+Maria is sitting on chair 2
+[Send<<] ACK to Maria
+[Get>>>] WANT 3 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 4 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 9 from Nike
+Nike is sitting on chair 9
+[Send<<] ACK to Nike
+[Get>>>] WANT 14 from Amy
+Amy is sitting on chair 14
+[Send<<] ACK to Amy
+[Get>>>] WANT 14 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 9 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 9 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 18 from Uuu
+Uuu is sitting on chair 18
+[Send<<] ACK to Uuu
+[Get>>>] WANT 9 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 7 from Len
+Len is sitting on chair 7
+[Send<<] ACK to Len
+[Get>>>] WANT 18 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 7 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 13 from Vvv
+Vvv is sitting on chair 13
+[Send<<] ACK to Vvv
+[Get>>>] WANT 13 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 5 from Yyy
+Yyy is sitting on chair 5
+[Send<<] ACK to Yyy
+[Get>>>] WANT 6 from Iii
+Iii is sitting on chair 6
+[Send<<] ACK to Iii
+[Get>>>] WANT 2 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 2 from Sam
+[Send<<] NACK to Sam
+[Get>>>] WANT 0 from Peter
+Peter is sitting on chair 0
+[Send<<] ACK to Peter
+[Send<<] QUIT to Sam
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Dimen
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Uuu
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Dimen
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Uuu
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 2 from Eyad
+Eyad is sitting on chair 2
+[Send<<] ACK to Eyad
+[Get>>>] WANT 12 from Ttt
+Ttt is sitting on chair 12
+[Send<<] ACK to Ttt
+[Get>>>] WANT 1 from Iii
+Iii is sitting on chair 1
+[Send<<] ACK to Iii
+[Get>>>] WANT 12 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 1 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 1 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 1 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 7 from Yyy
+Yyy is sitting on chair 7
+[Send<<] ACK to Yyy
+[Get>>>] WANT 8 from Maria
+Maria is sitting on chair 8
+[Send<<] ACK to Maria
+[Get>>>] WANT 8 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 8 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 11 from Nike
+Nike is sitting on chair 11
+[Send<<] ACK to Nike
+[Get>>>] WANT 11 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 15 from Rrr
+Rrr is sitting on chair 15
+[Send<<] ACK to Rrr
+[Get>>>] WANT 4 from Qqq
+Qqq is sitting on chair 4
+[Send<<] ACK to Qqq
+[Get>>>] WANT 19 from Carol
+Carol is sitting on chair 19
+[Send<<] ACK to Carol
+[Get>>>] WANT 19 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 19 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 10 from Helen
+Helen is sitting on chair 10
+[Send<<] ACK to Helen
+[Get>>>] WANT 10 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 18 from Jack
+Jack is sitting on chair 18
+[Send<<] ACK to Jack
+[Get>>>] WANT 19 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 19 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 19 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 9 from Len
+Len is sitting on chair 9
+[Send<<] ACK to Len
+[Get>>>] WANT 13 from Amy
+Amy is sitting on chair 13
+[Send<<] ACK to Amy
+[Get>>>] WANT 13 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 13 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 17 from Uuu
+Uuu is sitting on chair 17
+[Send<<] ACK to Uuu
+[Get>>>] WANT 17 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 6 from Green
+Green is sitting on chair 6
+[Send<<] ACK to Green
+[Get>>>] WANT 9 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 9 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 13 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 0 from Frank
+Frank is sitting on chair 0
+[Send<<] ACK to Frank
+[Get>>>] WANT 0 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 13 from Dimen
+[Send<<] NACK to Dimen
+[Get>>>] WANT 5 from Vvv
+Vvv is sitting on chair 5
+[Send<<] ACK to Vvv
+[Get>>>] WANT 16 from Bob
+Bob is sitting on chair 16
+[Send<<] ACK to Bob
+[Get>>>] WANT 5 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 16 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 16 from Dimen
+[Send<<] NACK to Dimen
+[Get>>>] WANT 14 from Kate
+Kate is sitting on chair 14
+[Send<<] ACK to Kate
+[Get>>>] WANT 14 from Dimen
+[Send<<] NACK to Dimen
+[Get>>>] WANT 14 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 3 from Peter
+Peter is sitting on chair 3
+[Send<<] ACK to Peter
+[Send<<] QUIT to Dimen
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Uuu
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Uuu
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 4 from Qqq
+Qqq is sitting on chair 4
+[Send<<] ACK to Qqq
+[Get>>>] WANT 4 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 9 from Green
+Green is sitting on chair 9
+[Send<<] ACK to Green
+[Get>>>] WANT 9 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 9 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 9 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 2 from Peter
+Peter is sitting on chair 2
+[Send<<] ACK to Peter
+[Get>>>] WANT 6 from Iii
+Iii is sitting on chair 6
+[Send<<] ACK to Iii
+[Get>>>] WANT 6 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 7 from Kate
+Kate is sitting on chair 7
+[Send<<] ACK to Kate
+[Get>>>] WANT 18 from Amy
+Amy is sitting on chair 18
+[Send<<] ACK to Amy
+[Get>>>] WANT 18 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 9 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 11 from Helen
+Helen is sitting on chair 11
+[Send<<] ACK to Helen
+[Get>>>] WANT 1 from Frank
+Frank is sitting on chair 1
+[Send<<] ACK to Frank
+[Get>>>] WANT 10 from Jack
+Jack is sitting on chair 10
+[Send<<] ACK to Jack
+[Get>>>] WANT 10 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 10 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 12 from Maria
+Maria is sitting on chair 12
+[Send<<] ACK to Maria
+[Get>>>] WANT 12 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 13 from Len
+Len is sitting on chair 13
+[Send<<] ACK to Len
+[Get>>>] WANT 5 from Rrr
+Rrr is sitting on chair 5
+[Send<<] ACK to Rrr
+[Get>>>] WANT 5 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 8 from Nike
+Nike is sitting on chair 8
+[Send<<] ACK to Nike
+[Get>>>] WANT 8 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 8 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 17 from Yyy
+Yyy is sitting on chair 17
+[Send<<] ACK to Yyy
+[Get>>>] WANT 16 from Vvv
+Vvv is sitting on chair 16
+[Send<<] ACK to Vvv
+[Get>>>] WANT 16 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 14 from Ttt
+Ttt is sitting on chair 14
+[Send<<] ACK to Ttt
+[Get>>>] WANT 3 from Bob
+Bob is sitting on chair 3
+[Send<<] ACK to Bob
+[Get>>>] WANT 3 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 13 from Eyad
+[Send<<] NACK to Eyad
+[Get>>>] WANT 1 from Uuu
+[Send<<] NACK to Uuu
+[Get>>>] WANT 0 from Carol
+Carol is sitting on chair 0
+[Send<<] ACK to Carol
+[Get>>>] WANT 15 from Eyad
+Eyad is sitting on chair 15
+[Send<<] ACK to Eyad
+[Send<<] QUIT to Uuu
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Eyad
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Eyad
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 3 from Yyy
+Yyy is sitting on chair 3
+[Send<<] ACK to Yyy
+[Get>>>] WANT 3 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 3 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 10 from Ttt
+Ttt is sitting on chair 10
+[Send<<] ACK to Ttt
+[Get>>>] WANT 10 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 8 from Qqq
+Qqq is sitting on chair 8
+[Send<<] ACK to Qqq
+[Get>>>] WANT 10 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 10 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 10 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 14 from Kate
+Kate is sitting on chair 14
+[Send<<] ACK to Kate
+[Get>>>] WANT 14 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 10 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 14 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 12 from Amy
+Amy is sitting on chair 12
+[Send<<] ACK to Amy
+[Get>>>] WANT 15 from Maria
+Maria is sitting on chair 15
+[Send<<] ACK to Maria
+[Get>>>] WANT 15 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 4 from Nike
+Nike is sitting on chair 4
+[Send<<] ACK to Nike
+[Get>>>] WANT 3 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 17 from Carol
+Carol is sitting on chair 17
+[Send<<] ACK to Carol
+[Get>>>] WANT 4 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 4 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 9 from Frank
+Frank is sitting on chair 9
+[Send<<] ACK to Frank
+[Get>>>] WANT 4 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 4 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 17 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 6 from Helen
+Helen is sitting on chair 6
+[Send<<] ACK to Helen
+[Get>>>] WANT 6 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 1 from Iii
+Iii is sitting on chair 1
+[Send<<] ACK to Iii
+[Get>>>] WANT 6 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 1 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 0 from Jack
+Jack is sitting on chair 0
+[Send<<] ACK to Jack
+[Get>>>] WANT 16 from Green
+Green is sitting on chair 16
+[Send<<] ACK to Green
+[Get>>>] WANT 0 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 13 from Peter
+Peter is sitting on chair 13
+[Send<<] ACK to Peter
+[Get>>>] WANT 8 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 8 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 8 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 5 from Len
+Len is sitting on chair 5
+[Send<<] ACK to Len
+[Get>>>] WANT 5 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 5 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 2 from Vvv
+Vvv is sitting on chair 2
+[Send<<] ACK to Vvv
+[Get>>>] WANT 2 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 11 from Rrr
+Rrr is sitting on chair 11
+[Send<<] ACK to Rrr
+[Get>>>] WANT 15 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 7 from Bob
+Bob is sitting on chair 7
+[Send<<] ACK to Bob
+[Send<<] QUIT to Eyad
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Jack
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 2 from Green
+Green is sitting on chair 2
+[Send<<] ACK to Green
+[Get>>>] WANT 2 from Helen
+[Send<<] NACK to Helen
+[Get>>>] WANT 2 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 16 from Helen
+Helen is sitting on chair 16
+[Send<<] ACK to Helen
+[Get>>>] WANT 16 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 3 from Iii
+Iii is sitting on chair 3
+[Send<<] ACK to Iii
+[Get>>>] WANT 14 from Peter
+Peter is sitting on chair 14
+[Send<<] ACK to Peter
+[Get>>>] WANT 16 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 8 from Bob
+Bob is sitting on chair 8
+[Send<<] ACK to Bob
+[Get>>>] WANT 3 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 5 from Carol
+Carol is sitting on chair 5
+[Send<<] ACK to Carol
+[Get>>>] WANT 3 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 16 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 16 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 16 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 13 from Amy
+Amy is sitting on chair 13
+[Send<<] ACK to Amy
+[Get>>>] WANT 10 from Frank
+Frank is sitting on chair 10
+[Send<<] ACK to Frank
+[Get>>>] WANT 6 from Len
+Len is sitting on chair 6
+[Send<<] ACK to Len
+[Get>>>] WANT 6 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 6 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 12 from Maria
+Maria is sitting on chair 12
+[Send<<] ACK to Maria
+[Get>>>] WANT 12 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 9 from Yyy
+Yyy is sitting on chair 9
+[Send<<] ACK to Yyy
+[Get>>>] WANT 3 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 12 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 3 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 12 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 12 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 15 from Rrr
+Rrr is sitting on chair 15
+[Send<<] ACK to Rrr
+[Get>>>] WANT 4 from Vvv
+Vvv is sitting on chair 4
+[Send<<] ACK to Vvv
+[Get>>>] WANT 4 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 15 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 4 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 11 from Nike
+Nike is sitting on chair 11
+[Send<<] ACK to Nike
+[Get>>>] WANT 11 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 11 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 1 from Qqq
+Qqq is sitting on chair 1
+[Send<<] ACK to Qqq
+[Get>>>] WANT 1 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 7 from Ttt
+Ttt is sitting on chair 7
+[Send<<] ACK to Ttt
+[Get>>>] WANT 9 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 9 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 0 from Kate
+Kate is sitting on chair 0
+[Send<<] ACK to Kate
+[Send<<] QUIT to Jack
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Helen
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Helen
+[Send<<] SIT to Iii
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 5 from Frank
+Frank is sitting on chair 5
+[Send<<] ACK to Frank
+[Get>>>] WANT 5 from Amy
+[Send<<] NACK to Amy
+[Get>>>] WANT 10 from Amy
+Amy is sitting on chair 10
+[Send<<] ACK to Amy
+[Get>>>] WANT 5 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 5 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 3 from Rrr
+Rrr is sitting on chair 3
+[Send<<] ACK to Rrr
+[Get>>>] WANT 3 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 7 from Nike
+Nike is sitting on chair 7
+[Send<<] ACK to Nike
+[Get>>>] WANT 15 from Peter
+Peter is sitting on chair 15
+[Send<<] ACK to Peter
+[Get>>>] WANT 15 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 5 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 15 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 4 from Qqq
+Qqq is sitting on chair 4
+[Send<<] ACK to Qqq
+[Get>>>] WANT 8 from Yyy
+Yyy is sitting on chair 8
+[Send<<] ACK to Yyy
+[Get>>>] WANT 4 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 6 from Ttt
+Ttt is sitting on chair 6
+[Send<<] ACK to Ttt
+[Get>>>] WANT 7 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 7 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 3 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 12 from Maria
+Maria is sitting on chair 12
+[Send<<] ACK to Maria
+[Get>>>] WANT 14 from Len
+Len is sitting on chair 14
+[Send<<] ACK to Len
+[Get>>>] WANT 12 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 9 from Vvv
+Vvv is sitting on chair 9
+[Send<<] ACK to Vvv
+[Get>>>] WANT 12 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 13 from Bob
+Bob is sitting on chair 13
+[Send<<] ACK to Bob
+[Get>>>] WANT 12 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 2 from Carol
+Carol is sitting on chair 2
+[Send<<] ACK to Carol
+[Get>>>] WANT 7 from Green
+[Send<<] NACK to Green
+[Get>>>] WANT 1 from Green
+Green is sitting on chair 1
+[Send<<] ACK to Green
+[Get>>>] WANT 14 from Iii
+[Send<<] NACK to Iii
+[Get>>>] WANT 14 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 11 from Iii
+Iii is sitting on chair 11
+[Send<<] ACK to Iii
+[Get>>>] WANT 11 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 0 from Kate
+Kate is sitting on chair 0
+[Send<<] ACK to Kate
+[Send<<] QUIT to Helen
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Amy
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Amy
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Iii
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 3 from Bob
+Bob is sitting on chair 3
+[Send<<] ACK to Bob
+[Get>>>] WANT 3 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 12 from Carol
+Carol is sitting on chair 12
+[Send<<] ACK to Carol
+[Get>>>] WANT 9 from Ttt
+Ttt is sitting on chair 9
+[Send<<] ACK to Ttt
+[Get>>>] WANT 10 from Iii
+Iii is sitting on chair 10
+[Send<<] ACK to Iii
+[Get>>>] WANT 13 from Maria
+Maria is sitting on chair 13
+[Send<<] ACK to Maria
+[Get>>>] WANT 14 from Green
+Green is sitting on chair 14
+[Send<<] ACK to Green
+[Get>>>] WANT 2 from Frank
+Frank is sitting on chair 2
+[Send<<] ACK to Frank
+[Get>>>] WANT 3 from Nike
+[Send<<] NACK to Nike
+[Get>>>] WANT 3 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 0 from Nike
+Nike is sitting on chair 0
+[Send<<] ACK to Nike
+[Get>>>] WANT 0 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 1 from Peter
+Peter is sitting on chair 1
+[Send<<] ACK to Peter
+[Get>>>] WANT 3 from Len
+[Send<<] NACK to Len
+[Get>>>] WANT 13 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 3 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 14 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 14 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 14 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 5 from Len
+Len is sitting on chair 5
+[Send<<] ACK to Len
+[Get>>>] WANT 7 from Qqq
+Qqq is sitting on chair 7
+[Send<<] ACK to Qqq
+[Get>>>] WANT 5 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 4 from Vvv
+Vvv is sitting on chair 4
+[Send<<] ACK to Vvv
+[Get>>>] WANT 4 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 4 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 8 from Kate
+Kate is sitting on chair 8
+[Send<<] ACK to Kate
+[Get>>>] WANT 8 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 8 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 11 from Rrr
+Rrr is sitting on chair 11
+[Send<<] ACK to Rrr
+[Get>>>] WANT 11 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 6 from Yyy
+Yyy is sitting on chair 6
+[Send<<] ACK to Yyy
+[Send<<] QUIT to Amy
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Nike
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Iii
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Nike
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 7 from Vvv
+Vvv is sitting on chair 7
+[Send<<] ACK to Vvv
+[Get>>>] WANT 1 from Green
+Green is sitting on chair 1
+[Send<<] ACK to Green
+[Get>>>] WANT 11 from Iii
+Iii is sitting on chair 11
+[Send<<] ACK to Iii
+[Get>>>] WANT 8 from Peter
+Peter is sitting on chair 8
+[Send<<] ACK to Peter
+[Get>>>] WANT 8 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 8 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 8 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 4 from Ttt
+Ttt is sitting on chair 4
+[Send<<] ACK to Ttt
+[Get>>>] WANT 4 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 4 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 3 from Qqq
+Qqq is sitting on chair 3
+[Send<<] ACK to Qqq
+[Get>>>] WANT 3 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 2 from Rrr
+Rrr is sitting on chair 2
+[Send<<] ACK to Rrr
+[Get>>>] WANT 13 from Bob
+Bob is sitting on chair 13
+[Send<<] ACK to Bob
+[Get>>>] WANT 6 from Len
+Len is sitting on chair 6
+[Send<<] ACK to Len
+[Get>>>] WANT 6 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 2 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 11 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 10 from Maria
+Maria is sitting on chair 10
+[Send<<] ACK to Maria
+[Get>>>] WANT 12 from Kate
+Kate is sitting on chair 12
+[Send<<] ACK to Kate
+[Get>>>] WANT 12 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 0 from Yyy
+Yyy is sitting on chair 0
+[Send<<] ACK to Yyy
+[Get>>>] WANT 0 from Frank
+[Send<<] NACK to Frank
+[Get>>>] WANT 9 from Frank
+Frank is sitting on chair 9
+[Send<<] ACK to Frank
+[Get>>>] WANT 7 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 5 from Carol
+Carol is sitting on chair 5
+[Send<<] ACK to Carol
+[Send<<] QUIT to Nike
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Peter
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Iii
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Peter
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 7 from Len
+Len is sitting on chair 7
+[Send<<] ACK to Len
+[Get>>>] WANT 8 from Frank
+Frank is sitting on chair 8
+[Send<<] ACK to Frank
+[Get>>>] WANT 5 from Green
+Green is sitting on chair 5
+[Send<<] ACK to Green
+[Get>>>] WANT 10 from Kate
+Kate is sitting on chair 10
+[Send<<] ACK to Kate
+[Get>>>] WANT 10 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 12 from Qqq
+Qqq is sitting on chair 12
+[Send<<] ACK to Qqq
+[Get>>>] WANT 3 from Vvv
+Vvv is sitting on chair 3
+[Send<<] ACK to Vvv
+[Get>>>] WANT 6 from Carol
+Carol is sitting on chair 6
+[Send<<] ACK to Carol
+[Get>>>] WANT 4 from Iii
+Iii is sitting on chair 4
+[Send<<] ACK to Iii
+[Get>>>] WANT 5 from Bob
+[Send<<] NACK to Bob
+[Get>>>] WANT 11 from Bob
+Bob is sitting on chair 11
+[Send<<] ACK to Bob
+[Get>>>] WANT 8 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 8 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 5 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 1 from Rrr
+Rrr is sitting on chair 1
+[Send<<] ACK to Rrr
+[Get>>>] WANT 1 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 1 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 0 from Yyy
+Yyy is sitting on chair 0
+[Send<<] ACK to Yyy
+[Get>>>] WANT 9 from Ttt
+Ttt is sitting on chair 9
+[Send<<] ACK to Ttt
+[Get>>>] WANT 3 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 11 from Peter
+[Send<<] NACK to Peter
+[Get>>>] WANT 2 from Maria
+Maria is sitting on chair 2
+[Send<<] ACK to Maria
+[Send<<] QUIT to Peter
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Kate
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Iii
+[Send<<] SIT to Kate
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 3 from Iii
+Iii is sitting on chair 3
+[Send<<] ACK to Iii
+[Get>>>] WANT 1 from Bob
+Bob is sitting on chair 1
+[Send<<] ACK to Bob
+[Get>>>] WANT 7 from Frank
+Frank is sitting on chair 7
+[Send<<] ACK to Frank
+[Get>>>] WANT 8 from Len
+Len is sitting on chair 8
+[Send<<] ACK to Len
+[Get>>>] WANT 6 from Green
+Green is sitting on chair 6
+[Send<<] ACK to Green
+[Get>>>] WANT 0 from Ttt
+Ttt is sitting on chair 0
+[Send<<] ACK to Ttt
+[Get>>>] WANT 1 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 2 from Qqq
+Qqq is sitting on chair 2
+[Send<<] ACK to Qqq
+[Get>>>] WANT 9 from Carol
+Carol is sitting on chair 9
+[Send<<] ACK to Carol
+[Get>>>] WANT 2 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 11 from Rrr
+Rrr is sitting on chair 11
+[Send<<] ACK to Rrr
+[Get>>>] WANT 9 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 4 from Vvv
+Vvv is sitting on chair 4
+[Send<<] ACK to Vvv
+[Get>>>] WANT 7 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 5 from Yyy
+Yyy is sitting on chair 5
+[Send<<] ACK to Yyy
+[Get>>>] WANT 2 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 2 from Kate
+[Send<<] NACK to Kate
+[Get>>>] WANT 10 from Maria
+Maria is sitting on chair 10
+[Send<<] ACK to Maria
+[Send<<] QUIT to Kate
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Len
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Iii
+[Send<<] SIT to Len
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 4 from Green
+Green is sitting on chair 4
+[Send<<] ACK to Green
+[Get>>>] WANT 2 from Bob
+Bob is sitting on chair 2
+[Send<<] ACK to Bob
+[Get>>>] WANT 6 from Iii
+Iii is sitting on chair 6
+[Send<<] ACK to Iii
+[Get>>>] WANT 4 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 8 from Frank
+Frank is sitting on chair 8
+[Send<<] ACK to Frank
+[Get>>>] WANT 0 from Vvv
+Vvv is sitting on chair 0
+[Send<<] ACK to Vvv
+[Get>>>] WANT 3 from Carol
+Carol is sitting on chair 3
+[Send<<] ACK to Carol
+[Get>>>] WANT 1 from Yyy
+Yyy is sitting on chair 1
+[Send<<] ACK to Yyy
+[Get>>>] WANT 2 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 10 from Rrr
+Rrr is sitting on chair 10
+[Send<<] ACK to Rrr
+[Get>>>] WANT 3 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 10 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 10 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 7 from Maria
+Maria is sitting on chair 7
+[Send<<] ACK to Maria
+[Get>>>] WANT 5 from Ttt
+Ttt is sitting on chair 5
+[Send<<] ACK to Ttt
+[Get>>>] WANT 5 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 9 from Qqq
+Qqq is sitting on chair 9
+[Send<<] ACK to Qqq
+[Send<<] QUIT to Len
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Iii
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Iii
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 9 from Frank
+Frank is sitting on chair 9
+[Send<<] ACK to Frank
+[Get>>>] WANT 2 from Green
+Green is sitting on chair 2
+[Send<<] ACK to Green
+[Get>>>] WANT 8 from Bob
+Bob is sitting on chair 8
+[Send<<] ACK to Bob
+[Get>>>] WANT 8 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 6 from Maria
+Maria is sitting on chair 6
+[Send<<] ACK to Maria
+[Get>>>] WANT 9 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 0 from Carol
+Carol is sitting on chair 0
+[Send<<] ACK to Carol
+[Get>>>] WANT 5 from Ttt
+Ttt is sitting on chair 5
+[Send<<] ACK to Ttt
+[Get>>>] WANT 0 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 0 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 3 from Rrr
+Rrr is sitting on chair 3
+[Send<<] ACK to Rrr
+[Get>>>] WANT 3 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 4 from Yyy
+Yyy is sitting on chair 4
+[Send<<] ACK to Yyy
+[Get>>>] WANT 4 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 3 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 1 from Qqq
+Qqq is sitting on chair 1
+[Send<<] ACK to Qqq
+[Get>>>] WANT 1 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 7 from Vvv
+Vvv is sitting on chair 7
+[Send<<] ACK to Vvv
+[Send<<] QUIT to Iii
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Green
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Green
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 6 from Bob
+Bob is sitting on chair 6
+[Send<<] ACK to Bob
+[Get>>>] WANT 6 from Ttt
+[Send<<] NACK to Ttt
+[Get>>>] WANT 1 from Ttt
+Ttt is sitting on chair 1
+[Send<<] ACK to Ttt
+[Get>>>] WANT 5 from Frank
+Frank is sitting on chair 5
+[Send<<] ACK to Frank
+[Get>>>] WANT 5 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 4 from Carol
+Carol is sitting on chair 4
+[Send<<] ACK to Carol
+[Get>>>] WANT 8 from Rrr
+Rrr is sitting on chair 8
+[Send<<] ACK to Rrr
+[Get>>>] WANT 1 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 7 from Qqq
+Qqq is sitting on chair 7
+[Send<<] ACK to Qqq
+[Get>>>] WANT 3 from Maria
+Maria is sitting on chair 3
+[Send<<] ACK to Maria
+[Get>>>] WANT 7 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 8 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 2 from Yyy
+Yyy is sitting on chair 2
+[Send<<] ACK to Yyy
+[Get>>>] WANT 0 from Vvv
+Vvv is sitting on chair 0
+[Send<<] ACK to Vvv
+[Send<<] QUIT to Green
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Frank
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 4 from Bob
+Bob is sitting on chair 4
+[Send<<] ACK to Bob
+[Get>>>] WANT 7 from Maria
+Maria is sitting on chair 7
+[Send<<] ACK to Maria
+[Get>>>] WANT 2 from Yyy
+Yyy is sitting on chair 2
+[Send<<] ACK to Yyy
+[Get>>>] WANT 1 from Vvv
+Vvv is sitting on chair 1
+[Send<<] ACK to Vvv
+[Get>>>] WANT 1 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 3 from Ttt
+Ttt is sitting on chair 3
+[Send<<] ACK to Ttt
+[Get>>>] WANT 7 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 7 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 3 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 0 from Qqq
+Qqq is sitting on chair 0
+[Send<<] ACK to Qqq
+[Get>>>] WANT 6 from Carol
+Carol is sitting on chair 6
+[Send<<] ACK to Carol
+[Get>>>] WANT 0 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 5 from Rrr
+Rrr is sitting on chair 5
+[Send<<] ACK to Rrr
+[Send<<] QUIT to Frank
+------------------------------
+[Send<<] GETUP to Bob
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Bob
+[Send<<] SIT to Carol
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 4 from Rrr
+Rrr is sitting on chair 4
+[Send<<] ACK to Rrr
+[Get>>>] WANT 4 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 6 from Yyy
+Yyy is sitting on chair 6
+[Send<<] ACK to Yyy
+[Get>>>] WANT 0 from Carol
+Carol is sitting on chair 0
+[Send<<] ACK to Carol
+[Get>>>] WANT 2 from Ttt
+Ttt is sitting on chair 2
+[Send<<] ACK to Ttt
+[Get>>>] WANT 4 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 1 from Maria
+Maria is sitting on chair 1
+[Send<<] ACK to Maria
+[Get>>>] WANT 5 from Vvv
+Vvv is sitting on chair 5
+[Send<<] ACK to Vvv
+[Get>>>] WANT 0 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 3 from Qqq
+Qqq is sitting on chair 3
+[Send<<] ACK to Qqq
+[Send<<] QUIT to Bob
+------------------------------
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] GETUP to Ttt
+[Send<<] SIT to Carol
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Send<<] SIT to Ttt
+[Get>>>] WANT 4 from Qqq
+Qqq is sitting on chair 4
+[Send<<] ACK to Qqq
+[Get>>>] WANT 4 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 2 from Rrr
+Rrr is sitting on chair 2
+[Send<<] ACK to Rrr
+[Get>>>] WANT 5 from Maria
+Maria is sitting on chair 5
+[Send<<] ACK to Maria
+[Get>>>] WANT 3 from Vvv
+Vvv is sitting on chair 3
+[Send<<] ACK to Vvv
+[Get>>>] WANT 5 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 1 from Yyy
+Yyy is sitting on chair 1
+[Send<<] ACK to Yyy
+[Get>>>] WANT 1 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 0 from Carol
+Carol is sitting on chair 0
+[Send<<] ACK to Carol
+[Send<<] QUIT to Ttt
+------------------------------
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Vvv
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] SIT to Carol
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Vvv
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Get>>>] WANT 2 from Qqq
+Qqq is sitting on chair 2
+[Send<<] ACK to Qqq
+[Get>>>] WANT 4 from Carol
+Carol is sitting on chair 4
+[Send<<] ACK to Carol
+[Get>>>] WANT 3 from Yyy
+Yyy is sitting on chair 3
+[Send<<] ACK to Yyy
+[Get>>>] WANT 2 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 1 from Rrr
+Rrr is sitting on chair 1
+[Send<<] ACK to Rrr
+[Get>>>] WANT 2 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 3 from Vvv
+[Send<<] NACK to Vvv
+[Get>>>] WANT 0 from Maria
+Maria is sitting on chair 0
+[Send<<] ACK to Maria
+[Send<<] QUIT to Vvv
+------------------------------
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Rrr
+[Send<<] GETUP to Yyy
+[Send<<] SIT to Carol
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Rrr
+[Send<<] SIT to Yyy
+[Get>>>] WANT 3 from Qqq
+Qqq is sitting on chair 3
+[Send<<] ACK to Qqq
+[Get>>>] WANT 0 from Carol
+Carol is sitting on chair 0
+[Send<<] ACK to Carol
+[Get>>>] WANT 1 from Maria
+Maria is sitting on chair 1
+[Send<<] ACK to Maria
+[Get>>>] WANT 3 from Rrr
+[Send<<] NACK to Rrr
+[Get>>>] WANT 3 from Yyy
+[Send<<] NACK to Yyy
+[Get>>>] WANT 2 from Rrr
+Rrr is sitting on chair 2
+[Send<<] ACK to Rrr
+[Send<<] QUIT to Yyy
+------------------------------
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Maria
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Rrr
+[Send<<] SIT to Carol
+[Send<<] SIT to Maria
+[Send<<] SIT to Qqq
+[Send<<] SIT to Rrr
+[Get>>>] WANT 1 from Carol
+Carol is sitting on chair 1
+[Send<<] ACK to Carol
+[Get>>>] WANT 2 from Rrr
+Rrr is sitting on chair 2
+[Send<<] ACK to Rrr
+[Get>>>] WANT 2 from Maria
+[Send<<] NACK to Maria
+[Get>>>] WANT 2 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 0 from Qqq
+Qqq is sitting on chair 0
+[Send<<] ACK to Qqq
+[Send<<] QUIT to Maria
+------------------------------
+[Send<<] GETUP to Carol
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Rrr
+[Send<<] SIT to Carol
+[Send<<] SIT to Qqq
+[Send<<] SIT to Rrr
+[Get>>>] WANT 1 from Rrr
+Rrr is sitting on chair 1
+[Send<<] ACK to Rrr
+[Get>>>] WANT 1 from Carol
+[Send<<] NACK to Carol
+[Get>>>] WANT 1 from Qqq
+[Send<<] NACK to Qqq
+[Get>>>] WANT 0 from Qqq
+Qqq is sitting on chair 0
+[Send<<] ACK to Qqq
+[Send<<] QUIT to Carol
+------------------------------
+[Send<<] GETUP to Qqq
+[Send<<] GETUP to Rrr
+[Send<<] SIT to Qqq
+[Send<<] SIT to Rrr
+[Get>>>] WANT 0 from Rrr
+Rrr is sitting on chair 0
+[Send<<] ACK to Rrr
+[Send<<] QUIT to Qqq
+[Send<<] PRIZE to Rrr
+Rrr is the winner, congratulations!
+
+---------------------------------------------------------------
+Normal termination.
+prehax@PreBook musicalSocket % 

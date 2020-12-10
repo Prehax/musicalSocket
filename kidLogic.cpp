@@ -56,7 +56,7 @@ void KidLogic::doCommand(){
     string errorMessage = "Protocol is mixed up.";
     char messageCStr[256];
     fscanf(momIn, "%s", messageCStr);
-    cout << messageCStr << endl;
+    cout << "[Get>>>] " << messageCStr << endl;
     command = messageCStr;
     cout << "State = "<< stateName[pcol]<< ", Command is: " <<command << endl ;
     try{
@@ -117,7 +117,7 @@ void KidLogic::doSit(){
     // Get a random chair to try
     int wantSeat = rand()%nChairs;
     // Send request
-    cout << "Trying seat: " << wantSeat << endl;
+    cout << "[Send<<] " << commands[cmdMsg::WANT] << " " << wantSeat << endl;
     fprintf(momOut, "WANT %i\n", wantSeat);
     fflush(momOut);
 }
@@ -163,7 +163,8 @@ void KidLogic::doNack(char* availableChairs){
     // cout << endl;
 
     int wantSeat = chairNums[rand()%chairCount];
-    cout << "Trying seat: " << wantSeat << endl;
+    // cout << "[Get>>>] " << commands[cmdMsg::NACK] << endl; 
+    cout << "[Send<<] " << commands[cmdMsg::WANT] << " " << wantSeat << endl;
     fprintf(momOut, "WANT %i\n", wantSeat);
     fflush(momOut);
 }

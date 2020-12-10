@@ -56,6 +56,7 @@ void MomLogic::run() {
     }
     for (int k = 0; k < nKids; ++k) {
         if(kids[k].alive) {
+            cout << "[Send<<] " << commands[cmdMsg::PRIZE] << " to " << kids[k].name << endl;
             cout << kids[k].name << " is the winner, congratulations!" << endl;
             fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::PRIZE]);
             fflush(kids[k].kidOut);
@@ -150,7 +151,7 @@ int MomLogic::doService(pollfd* pfd, int k) {
         if (pfd->revents & POLLIN) {
             // This means the event is reading
             fscanf(kids[k].kidIn, "%s", buf);
-            cout << "Hello " << buf << endl;
+            cout << "[Send<<] " << commands[cmdMsg::HELLO] << " to " << buf << endl;
             kids[k].name = buf;
         }
         else if (pfd->revents & POLLHUP) {
@@ -171,6 +172,7 @@ void MomLogic::initRound() {
     chairs[nChairs] = '\0'; 
     for (int k = 0; k < nKids; ++k){
         if (!kids[k].alive) continue;
+        cout << "[Send<<] " << commands[cmdMsg::GETUP] << " to " << kids[k].name << endl;
         fprintf(kids[k].kidOut, "%s %i\n", commands[cmdMsg::GETUP], nChairs);
         fflush(kids[k].kidOut);
     }
@@ -182,6 +184,7 @@ void MomLogic::stopTheMusic() {
     sleep(2);
     for (int k = 0; k < nKids; ++k){
         if (!kids[k].alive) continue;
+        cout << "[Send<<] " << commands[cmdMsg::SIT] << " to " << kids[k].name << endl;
         fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::SIT]);
         fflush(kids[k].kidOut);
     }
@@ -206,6 +209,7 @@ void MomLogic::checkSockets() {
                     if (nAvailable == 0){
                         roundIsOver = true;
                         kids[k].alive = false;
+                        cout << "[Send<<] " << commands[cmdMsg::QUIT] << " to " << kids[k].name << endl;
                         fprintf(kids[k].kidOut, "%s\n", commands[cmdMsg::QUIT]);
                         fflush(kids[k].kidOut);
                         close(workerFd[k].fd);
@@ -228,15 +232,18 @@ void MomLogic::handleChairRequest(int kidNum, int& nAvailable) {
     int chairNum = 0;
     fscanf(kids[kidNum].kidIn, "%s %i", buffer, &chairNum);
     int chairIndex = chairNum;
+    cout << "[Get>>>] " << commands[cmdMsg::WANT] << " " << chairIndex << " from " << kids[kidNum].name << endl;
     if(chairs[chairIndex] == '1') {
         nAvailable--;
         chairs[chairIndex] = '0';
         cout << kids[kidNum].name << " is sitting on chair " << chairIndex << endl;
+        cout << "[Send<<] " << commands[cmdMsg::ACK] << " to " << kids[kidNum].name << endl;
         fprintf(kids[kidNum].kidOut, "%s\n", commands[cmdMsg::ACK]);
         fflush(kids[kidNum].kidOut);
     }
     else {
         // cout << kids[kidNum].name << " is trying on chair " << chairIndex << ", but failed"<< endl;
+        cout << "[Send<<] " << commands[cmdMsg::NACK] << " to " << kids[kidNum].name << endl;
         fprintf(kids[kidNum].kidOut, "%s %s\n", commands[cmdMsg::NACK], chairs);
         fflush(kids[kidNum].kidOut);
     }

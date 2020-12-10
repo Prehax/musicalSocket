@@ -1,0 +1,200 @@
+////////////////////////////////////////////
+///////////////// Server ///////////////////
+////////////////////////////////////////////
+prehax@PreBook musicalSocket % ./mom 3
+
+---------------------------------------------------------------
+	Dylan Chariott & Longlong Xu
+	CSCI 4547/6647
+	Wed Dec  9 2020	23:40:35
+---------------------------------------------------------------
+There are 3 kids joining the game...
+3 kids are coming~~
+[Send<<] HELLO to Frank
+[Send<<] HELLO to Jack
+[Send<<] HELLO to Ooo
+------------------------------
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Jack
+[Send<<] GETUP to Ooo
+[Send<<] SIT to Frank
+[Send<<] SIT to Jack
+[Send<<] SIT to Ooo
+[Get>>>] WANT 1 from Frank
+Frank is sitting on chair 1
+[Send<<] ACK to Frank
+[Get>>>] WANT 1 from Jack
+[Send<<] NACK to Jack
+[Get>>>] WANT 1 from Ooo
+[Send<<] NACK to Ooo
+[Get>>>] WANT 0 from Jack
+Jack is sitting on chair 0
+[Send<<] ACK to Jack
+[Send<<] QUIT to Ooo
+------------------------------
+[Send<<] GETUP to Frank
+[Send<<] GETUP to Jack
+[Send<<] SIT to Frank
+[Send<<] SIT to Jack
+[Get>>>] WANT 0 from Frank
+Frank is sitting on chair 0
+[Send<<] ACK to Frank
+[Send<<] QUIT to Jack
+[Send<<] PRIZE to Frank
+Frank is the winner, congratulations!
+
+---------------------------------------------------------------
+Normal termination.
+
+////////////////////////////////////////////
+///////////////// Client ///////////////////
+////////////////////////////////////////////
+Frank.log:
+
+---------------------------------------------------------------
+	Dylan Chariott & Longlong Xu
+	CSCI 4547/6647
+	Wed Dec  9 2020	23:40:40
+---------------------------------------------------------------
+Ready to connect socket 3 to localhost
+Socket: connection established to localhost.
+Joining musical game on {
+	sin_addr.saddr = 127.0.0.1
+	sin_port = 5005
+}
+[Get>>>] Hello, Kid! What's your name?
+[Send<<] Frank
+[Get>>>] GETUP
+State = Kid is newbie, Command is: GETUP
+Time to get another round started
+[Get>>>] SIT
+State = Kid is marching, Command is: SIT
+Let's get a seat!
+[Send<<] WANT 1
+[Get>>>] ACK
+State = Kid is seeking, Command is: ACK
+Woo I got the seat.
+[Get>>>] GETUP
+State = Kid is sitting, Command is: GETUP
+Time to get another round started
+[Get>>>] SIT
+State = Kid is marching, Command is: SIT
+Let's get a seat!
+[Send<<] WANT 0
+[Get>>>] ACK
+State = Kid is seeking, Command is: ACK
+Woo I got the seat.
+[Get>>>] PRIZE
+State = Kid is sitting, Command is: PRIZE
+I won :)
+
+---------------------------------------------------------------
+Normal termination.
+
+////////////////////////////////////////////
+///////////////// Client ///////////////////
+////////////////////////////////////////////
+Jack.log:
+
+---------------------------------------------------------------
+	Dylan Chariott & Longlong Xu
+	CSCI 4547/6647
+	Wed Dec  9 2020	23:40:40
+---------------------------------------------------------------
+Ready to connect socket 3 to localhost
+Socket: connection established to localhost.
+Joining musical game on {
+	sin_addr.saddr = 127.0.0.1
+	sin_port = 5005
+}
+[Get>>>] Hello, Kid! What's your name?
+[Send<<] Jack
+[Get>>>] GETUP
+State = Kid is newbie, Command is: GETUP
+Time to get another round started
+[Get>>>] SIT
+State = Kid is marching, Command is: SIT
+Let's get a seat!
+[Send<<] WANT 1
+[Get>>>] NACK
+State = Kid is seeking, Command is: NACK
+[Send<<] WANT 0
+[Get>>>] ACK
+State = Kid is seeking, Command is: ACK
+Woo I got the seat.
+[Get>>>] GETUP
+State = Kid is sitting, Command is: GETUP
+Time to get another round started
+[Get>>>] SIT
+State = Kid is marching, Command is: SIT
+Let's get a seat!
+[Send<<] WANT 0
+[Get>>>] QUIT
+State = Kid is seeking, Command is: QUIT
+I lost. I am now quitting :(
+
+---------------------------------------------------------------
+Normal termination.
+
+////////////////////////////////////////////
+///////////////// Client ///////////////////
+////////////////////////////////////////////
+Ooo.log:
+
+---------------------------------------------------------------
+	Dylan Chariott & Longlong Xu
+	CSCI 4547/6647
+	Wed Dec  9 2020	23:40:40
+---------------------------------------------------------------
+Ready to connect socket 3 to localhost
+Socket: connection established to localhost.
+Joining musical game on {
+	sin_addr.saddr = 127.0.0.1
+	sin_port = 5005
+}
+[Get>>>] Hello, Kid! What's your name?
+[Send<<] Ooo
+[Get>>>] GETUP
+State = Kid is newbie, Command is: GETUP
+Time to get another round started
+[Get>>>] SIT
+State = Kid is marching, Command is: SIT
+Let's get a seat!
+[Send<<] WANT 1
+[Get>>>] NACK
+State = Kid is seeking, Command is: NACK
+[Send<<] WANT 0
+[Get>>>] QUIT
+State = Kid is seeking, Command is: QUIT
+I lost. I am now quitting :(
+
+---------------------------------------------------------------
+Normal termination.
+
+////////////////////////////////////////////
+///////////////// Client ///////////////////
+////////////////////////////////////////////
+All other *.log, including Amy.log, Bob.log, Carol.log, etc.:
+
+---------------------------------------------------------------
+	Dylan Chariott & Longlong Xu
+	CSCI 4547/6647
+	Wed Dec  9 2020	23:40:40
+---------------------------------------------------------------
+Ready to connect socket 3 to localhost
+Socket: connection established to localhost.
+Joining musical game on {
+	sin_addr.saddr = 127.0.0.1
+	sin_port = 5005
+}
+Amy: I'm late, I'll leave
+
+---------------------------------------------------------------
+Normal termination.
+
+
+
+
+
+
+
